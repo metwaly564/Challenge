@@ -1,0 +1,661 @@
+*{
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 0%;
+  margin: 0%;
+  /* text-transform: capitalize; */
+
+}
+body 
+{
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(6,auto);
+  margin: 5px;
+  /* height: 177vh; */
+}
+div
+{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vw;
+}
+.one , .two
+{
+  /* grid-column: span 5; */
+  grid-column: span 6;
+}
+.three
+{
+  /* grid-row: span 2; */
+  grid-row: span 4;
+  grid-column: span 2;
+}
+.four,.five,.six
+{
+  grid-row: span 3;
+}
+
+
+.six,.eight
+{
+  grid-column: span 2;
+  
+}
+
+.nine,.ten 
+{
+  grid-column: span 3;
+}
+.seven
+  {
+   grid-column: span 2; 
+  }
+  
+
+
+.eleven,.twelve,.thirteen
+{
+  /* grid-column: span 5; */
+  grid-column: span 6;
+}
+.one 
+{
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.three 
+{
+  grid-row: span 6;
+  grid-column: span 1;
+}
+.four,.five,.six,.seven,.eight
+{
+  grid-row: span 3;
+}
+/* .six,.eight
+{
+grid-column: span 3;
+} */
+.square
+{
+  --w_h:4.6vw;
+  position: absolute;
+  background-color: black;
+  width: var(--w_h);
+  height: calc(var(--w_h) + 2px);
+  color: transparent;
+  /* justify-self: flex-start; */
+}
+.square .circle
+{
+  --w_h:2.2vw;
+  width: var(--w_h);
+  height: var(--w_h);
+background-color: transparent;
+border: 4px solid white;
+border-radius: 50%;
+}
+.one .free_consult
+{
+  --w_h:19vw;
+  color: #edece9;
+  background-color: black;
+  /* padding: 20px; */
+  border-radius: 60px;
+  font-size: 1.5vw;
+  width: var(--w_h);
+  height: calc(var(--w_h) - 14vw);
+  /* justify-self: flex-end; */
+}
+.two
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2vw;
+} 
+.two h2 
+{
+  color: black;
+margin: 1.1vw 0vw;
+font-size: 5vw;
+}
+.two p 
+{
+  color: #c6bdb6;
+  font-size:1.6vw;
+}
+
+.three
+{
+  height: 60vh;
+  background-color: #755cde;
+  font-size: 1.3vw;
+  grid-column: span 2;
+}
+.three img 
+{
+  width: 12vw;
+} 
+.three p
+{
+font-size: 2.5vw;
+}
+.four 
+{
+  background-color: #f5a560;
+}
+.four img 
+{
+  width: 9vw;
+}
+
+.five 
+{
+  background-color: #f39d9e;
+}
+.five img 
+{
+  width: 9vw;
+}
+
+.six 
+{
+  background-color: #62c4b7;
+}
+.six img 
+{
+  width: 15vw;
+}
+
+.seven
+{
+  background-color: #ea7564;
+}
+.seven img 
+{
+  width: 15vw;
+}
+
+.eight 
+{
+  background-color: #55204a;
+  
+}
+.eight img 
+{
+  width: 16vw;
+}
+
+.three,.four,.five, .six,.seven,.eight
+{
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+border-radius: 10px;
+}
+.three img ,.four img ,.five img , .six img,.seven img ,.eight img 
+{
+  align-self: flex-start;
+  padding: 1.5vw;
+}
+
+.three p ,.four p ,.five p , .six p,.seven p ,.eight p 
+{
+  align-self: flex-end;
+  padding: 21px;
+  font-size: 20px;
+
+} 
+
+:root
+{
+  --margin_L_R:3vw;
+}
+.three,.one,.two
+{
+  margin-left: var(--margin_L_R);
+}
+.six , .eight ,.one,.two
+{
+  margin-right: var(--margin_L_R);
+}
+.nine
+{
+  display: flex;
+  justify-content: flex-start;
+}
+.nine img 
+{
+  border-radius:50% ;
+  margin-left: calc(var(--margin_L_R) + 0.1vw);
+}
+.ten 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
+  text-transform: none;
+}
+.ten h1 
+{
+  font-size: 3vw;
+  color: black;
+}
+.ten p 
+{
+  color: #8c857d;
+  font-size: 1.3vw;
+  margin: 15px 4px;
+}
+.ten span , .twelve span
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --w-h:40px;
+  background-color: #ea7364;
+  /* padding: 15px; */
+  width: calc(var(--w-h) + 130px) ;
+  height: var(--w-h);
+  border-radius: 35px;
+  text-transform: capitalize;
+  font-size: 0.8vw;
+  margin: 5px;
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+.eleven 
+{
+  display: flex;
+  flex-direction: column;
+
+}
+.eleven h3 
+{
+  color: black;
+  margin: 10px 0px 30px 0px;
+  font-size: 2.5vw;
+}
+.eleven div 
+{
+  overflow: hidden;
+}
+#slider 
+{
+  position: relative;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
+}
+.eleven div img
+{
+  width: 39%;
+  margin: 0px 15px;
+  border-radius: 10px;
+  position: relative;
+  transition: linear;
+  left: 0px; /*520 -520/*/
+}
+.both-arrows .arrow 
+{
+  width: 10%;
+  margin: 40px 4px;
+  cursor: pointer;
+}.both-arrows span 
+{
+  --w:45px;
+  width:var(--w);
+  height: var(--w);
+  background-color: black;
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 35px 10px;
+  cursor: pointer;
+}
+.twelve 
+{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  /* margin: 0px 100px; */
+  width: fit-content;
+  justify-self: center;
+  padding: 40px 80px;
+  padding-bottom: 60px;
+  border-radius:12px;
+}
+.twelve div 
+{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  align-items: flex-start;
+  margin-right: 120px;
+  
+}
+.twelve div h2 
+{
+  font-weight: bolder;
+  margin: 22px 0px;
+}
+.twelve div p
+{
+  font-size: 15px;
+  font-weight: lighter;
+  color: #96928f;
+} 
+/*_____________________________/**/
+
+@media only screen and (max-width: 768px) 
+{
+body
+{
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  margin: 2%;
+  /* height: 100vh; */
+}
+.one 
+{
+  width: 95vw;
+  /* grid-column: span 6; */
+}
+.one .free_consult 
+{
+  font-weight: bold;
+}
+.square .circle 
+{
+  --w_h:2.4vw;
+  border: 3px solid white;
+}
+.two 
+{
+  width: 85vw;
+} 
+.three
+{
+  grid-column: span 3;
+  margin-left: 0px;
+}
+.five 
+{
+  grid-column: span 2;
+}
+.six 
+{
+  grid-column: span 3;
+  margin-right: 0px;
+}
+.seven , .eight 
+{
+  grid-column: span 3;
+  margin: 0%;
+  height: 32vw;
+}
+.nine img 
+{
+  width: 40vw;
+}
+.ten p 
+{
+  font-size: 1.6vw;
+}
+.ten span, .twelve span 
+{
+  font-size: 1.5vw;
+}
+.twelve
+{
+  padding: 30px 40px;
+  margin: 0px 5vw;
+  margin-bottom: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.twelve div 
+{
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+.twelve div p 
+{
+  text-align: center;
+}
+.twelve div h2
+{
+  font-size: 3.6vw;
+  font-weight: lighter;
+}
+ .four img, .five img 
+{
+  width: 12vw;
+}
+.three img,.six img, .seven img, .eight img
+{
+  width: 20vw;
+}
+} 
+/*/__________________________*
+
+/*__________________________*/
+@media only screen and (max-width: 600px) 
+{
+  .one 
+  {
+    width: 93vw;
+  }
+.nine img 
+{
+  width: 32vw;
+}
+.three p, .four p, .five p, .six p, .seven p, .eight p
+{
+  /* width: 20vw */
+  padding: 10px;
+  font-size: 3vw;
+}
+.ten p 
+{
+  font-size: 1.7vw;
+}
+}
+/*__________________________*/
+@media only screen and (max-width: 330px)
+{
+  body
+  {
+    grid-template-columns: repeat(4,auto);
+  /* padding: 10vw 2vw; */
+  overflow-x: hidden;
+  }
+  .one
+   {
+    margin-top: 3vw;
+  }
+  .one .free_consult 
+  {
+    font-size: 1.6vw;
+  }
+  .square 
+  {
+  --new_w_h:9vw;
+  width: var(--new_w_h);
+  height: var(--new_w_h);
+  margin-left: -2vw;
+  }
+  .square .circle 
+  {
+    --new_w-h:4vw;
+    width: var(--new_w-h);
+    height: var(--new_w-h);
+    border: 2px solid white;
+  }
+  .three 
+  {
+    height: 60vw;
+  }
+  .three,.six,.seven,.eight
+  {
+    grid-column: span 6;
+    height: 30vw;
+  }
+  .four , .five 
+  {
+    grid-column: span 3;
+    /* width: fit-content; */
+    /* width: 28vw; */
+    margin: 0px;
+    padding: 0px;
+    height: 30vw;
+
+  }
+  .three ,.five,.six,.seven,.eight 
+  {
+    margin-right: 3.1vw;
+  }  
+  .four img,.five img
+  {
+    width: 18vw;
+  } 
+  .six img, .seven img , .eight img
+  {
+    width: 27vw;
+  }
+  .nine 
+  {
+    justify-content: center;
+    grid-column: span 5;
+    align-items: center;
+
+  }
+  .nine img 
+  {
+    width: 70vw;
+    margin-left: 10vw;
+  }
+  .ten 
+  {
+   grid-column: span 6;
+   align-items: center;
+  }
+  .ten h1 
+  {
+    font-size: 7vw;
+  }
+  .ten p 
+  {
+    font-size: 4.3vw;
+    padding: 5vw;
+  }
+  .ten span, .twelve span 
+  {
+    font-size: 3vw;
+  }
+  .three p, .four p, .five p, .six p, .seven p, .eight p 
+  {
+    font-size: 5vw;
+  }
+  .eleven h3 
+  {
+    font-size: 4.5vw;
+  }
+  .twelve div h2 
+  {
+    font-size: 6vw;
+  }
+} 
+
+
+@media only screen and (min-width:770px) and (max-width:1102px) 
+{
+  .one 
+  {
+    margin-top: 2vw;
+  }
+  .square 
+  {
+    --w_h:4.5vw;
+  }
+  .square .circle 
+  {
+    --w_h:2.3vw;
+    border: 3px solid white;
+  }
+  .three 
+  {
+  margin: 0px;
+  }
+.four , .five 
+{
+  grid-column: span 4;
+  /* margin-right: 5vw; */
+}  
+.six , .seven ,.eight
+{
+  grid-column: span 6;
+  margin: 0px;
+  height: 25vw;
+}
+.four , .five ,.six , .seven ,.eight
+{
+  margin-right: 1vw;
+}
+.three , .five ,.six , .seven ,.eight
+{
+  margin-left: 1vw;
+}
+.three img, .four img, .five img
+{
+  width: 16vw;
+}
+.six img, .seven img, .eight img
+{
+  width: 24vw;
+}
+.three p, .four p, .five p, .six p, .seven p, .eight p
+{
+  font-size: 3.5vw;
+}
+.five 
+{
+  margin-left: 0px;
+}
+.nine img
+{
+width: 40vw;
+}
+.ten p
+{
+  font-size: 2.5vw;
+}
+.ten span, .twelve span 
+{
+  font-size: 1.6vw;
+}
+}
+@media only screen and (max-width: 393px)
+{
+  .one,.two
+  {
+    justify-self: center;
+    align-self: center;
+    margin: 0px;
+  }
+} 
